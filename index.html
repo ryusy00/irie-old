@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="./common/main.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <!-- 부트스트랩 5 JS 및 CSS 로드 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더시작 -->
+        <header>
+            <a href="./main.html"><img class="logo" src="./images/mainlogo.png"></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="menu1" href="#">연구</a>
+                        <!-- <ul class="submenu">
+                        </ul> -->
+                    </li>
+                    <li><a class="menu2" href="#">소통</a>
+                        <ul class="submenu">
+                            <li><a href="./subpage/notice.html">공지사항</a></li>
+                            <li><a href="./subpage/book.html">발간물</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu3" href="#">소개</a>
+                        <ul class="submenu">
+                            <li><a href="./subpage/greetings.html">인사말</a></li>
+                            <li><a href="./subpage/group.html">조직도</a></li>
+                            <li><a href="./subpage/road.html">찾아 오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sub_back"></div> <!--서브메뉴 아래에 깔릴 배경-->
+            <div class="sub_back_white"></div> <!--서브메뉴 아래에 깔릴 하얀 배경-->
+
+        </header><!-- 헤더끝 -->
+        <!-- 메인시작 -->
+        <div id="container">
+            <div class="main1">
+                <div class="maintext">
+                    <div class="square">
+                    </div>
+                </div>
+            </div>
+            <div class="main2">
+                <div class="tab">
+                    <input id="tab01" type="radio" name="tabs" checked>
+                    <label for="tab01"> 게시판 </label>
+                    <input id="tab02" type="radio" name="tabs">
+                    <label for="tab02"> 발간물 </label>
+                    <section id="content01">
+                        <div class="box">
+                            <div class="li01">
+                                <li> 정보전략 계획 수립(ISP) </li>
+                                <li> Master Plan 수립 </li>
+                                <li> 통합시스템 구축 컨설팅 제공 </li>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="content02">
+                        <div class="box">
+                            <div class="li02">
+                                <li> 고객의 IT아웃소싱 전략수립 </li>
+                                <li> 추진성과에 대한 분석 </li>
+                                <li> 효율적인 IT아웃소싱 체계수립 </li>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="./subpage/greetings.html"><img src="./images/building.png" alt="Icon 1"
+                                    class="icon" width="20">
+                                <span>기관소개</span></a>
+                        </td>
+                        <td>
+                            <a href="./subpage/book.html"><img src="./images/business.png" alt="Icon 2" class="icon"
+                                    width="20">
+                                <span>연구분야</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="./subpage/notice.html"><img src="./images/notice.png" alt="Icon 3" class="icon"
+                                    width="20">
+                                <span>게시판</span></a>
+                        </td>
+                        <td>
+                            <a href="./subpage/road.html"><img src="./images/location.png" alt="Icon 4" class="icon"
+                                    width="20">
+                                <span>찾아오시는길</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 메인끝 -->
+
+        <!-- 푸터시작 -->
+        <div id="footer">
+            <div class="footer1">
+                <br><br>
+                <a class="a2" href="./subpage/greetings.html">회사소개</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a class="a2" href="./subpage/sitemap.html">사이트맵</a>
+                <p>COPYRIGHT ©
+                    <script>document.write(new Date().getFullYear());</script>
+                    RIEI ALL RIGHTS RESERVED
+                </p>
+            </div>
+            <div class="footerlogo">
+                <img src="./images/footerlogo.png" style="height: 70px;">
+            </div>
+        </div>
+        <!-- 푸터끝 -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        window.onload = function () {
+            var navItems = document.querySelectorAll('nav > ul li');
+            var header = document.querySelector('header');
+
+            for (var i = 0; i < navItems.length; i++) {
+                navItems[i].addEventListener('mouseover', function () {
+                    header.style.backgroundColor = 'white';
+                });
+
+                navItems[i].addEventListener('mouseout', function () {
+                    header.style.backgroundColor = 'transparent';
+                });
+            }
+        }
+
+        $("nav > ul > li").mouseenter(function () {
+            $(".submenu, .sub_back").stop().slideDown(400);
+            $(".sub_back_white ").stop().slideDown(300);
+        });
+        $("nav > ul > li").mouseleave(function () {
+            $(".submenu, .sub_back").stop().slideUp(400);
+            $(".sub_back_white ").stop().slideUp(500);
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업소개</title>
+    <link rel="stylesheet" type="text/css" href="../common/subPage.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더시작 -->
+        <header>
+            <a class="navbar-brand" href="../main.html"><img class="logo" src="../images/mainlogo.png"></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="menu1" href="#">연구</a>
+                        <!-- <ul class="submenu">
+                    </ul> -->
+                    </li>
+                    <li><a class="menu2" href="#">소통</a>
+                        <ul class="submenu">
+                            <li><a href="./notice.html">공지사항</a></li>
+                            <li><a href="./book.html">발간물</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu3" href="#">소개</a>
+                        <ul class="submenu">
+                            <li><a href="./greetings.html">인사말</a></li>
+                            <li><a href="./group.html">조직도</a></li>
+                            <li><a href="./road.html">찾아 오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sub_back"></div> <!--서브메뉴 아래에 깔릴 배경-->
+            <div class="sub_back_white"></div> <!--서브메뉴 아래에 깔릴 하얀 배경-->
+        </header><!-- 헤더끝 -->
+
+
+        <!-- 메인시작 -->
+        <div id="container">
+            <div>
+                <div class="flex-shrink-0 p-3 bg-white"
+                    style="width: 280px; border: 1px solid #555f6e; font-size: large; border-radius: 10px;">
+
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                                기관소개
+                            </button>
+                            <div class="collapse" id="home-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="./greetings.html"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">인사말</a>
+                                    </li>
+                                    <li><a href="./group.html"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">조직도</a>
+                                    </li>
+                                    <li><a href="./road.html"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">찾아
+                                            오시는길</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                사업소개
+                            </button>
+                            <div class="collapse show" id="dashboard-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="./business.html"
+                                            class="link-dark d-inline-flex text-decoration-none rounded"
+                                            style="color: #0066b2 !important; font-size: large; font-weight: bold;">사업소개</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                게시판
+                            </button>
+                            <div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="./notice.html"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">공지사항</a></li>
+                                    <li><a href="./book.html"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">발간물</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div class="busi_h2">
+                        <h3> 홈 > 소개 > <span style="font-weight: bold;">사업소개</span></h3>
+                        <hr class="hr-container" style="width: 174%;">
+                        <div class="icon-container">
+                            <img src="../images/icon_business.png" alt="사업소개" class="icon"
+                                style="width: 5% !important;">
+                            <h1>사업소개</h1>
+
+                        </div>
+                        <h3 style="margin-left: 30px;">RIEI와 함께 성장하는 "지역"</h3>
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="margin : 0 auto; ">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        xmlns="http://www.w3.org/2000/svg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>지역산업</title>
+                                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                                        <image xlink:href="../images/tksdjq.jpg" height="100%" width="100%" />
+                                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">지역산업</text>
+                                    </svg>
+
+                                    <div class="card-body">
+                                        <ul class="card-text">
+                                            <li>지역 산업 발전 전략 및 육성정책 수립</li>
+                                            <li>지역 산업인력 및 기업 제도 분석</li>
+                                            <li>지역산업 생태계 구축 및 지역 중소기업 발전 전략</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        xmlns="http://www.w3.org/2000/svg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>지역경제</title>
+                                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                                        <image xlink:href="../images/rudwp.jpg" height="100%" width="100%" />
+                                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">지역경제</text>
+                                    </svg>
+
+                                    <div class="card-body">
+                                        <ul class="card-text">
+                                            <li>지역 경제·산업 구조 변화 및 정책 수립</li>
+                                            <li>지역경제 활성화 방안 수립 연구</li>
+                                            <li>지역균형발전 전략 수립 및 정책·사업 개발</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                        xmlns="http://www.w3.org/2000/svg" role="img"
+                                        aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+                                        <title>지역고용</title>
+                                        <rect width="100%" height="100%" fill="#55595c"></rect>
+                                        <image xlink:href="../images/rhdyd.jpg" height="100%" width="100%" />
+                                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">지역고용</text>
+                                    </svg>
+
+                                    <div class="card-body">
+                                        <ul class="card-text">
+                                            <li>지역 고용 인프라 구축 및 거버넌스 연구</li>
+                                            <li>지역 노동시장 고용효과 및 정책 성과 분석</li>
+                                            <li>지역 노동시장 동향 분석 및 일자리창출 전략 개발 등</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- 메인 끝 -->
+
+
+        <!-- 푸터시작 -->
+        <div id="footer" style="position: absolute;">
+            <div class="footer1">
+                <br><br>
+                <a class="a2" href="../subpage/greetings.html">회사소개</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a class="a2" href="../subpage/sitemap.html">사이트맵</a>
+                <p>COPYRIGHT ©
+                    <script>document.write(new Date().getFullYear());</script>
+                    RIEI ALL RIGHTS RESERVED
+                </p>
+            </div>
+            <div class="footerlogo">
+                <img src="../images/footerlogo.png" style="height: 70px;">
+            </div>
+        </div><!-- 푸터끝 -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+
+        window.onload = function () {
+            var navItems = document.querySelectorAll('nav > ul li');
+            var header = document.querySelector('header');
+
+            for (var i = 0; i < navItems.length; i++) {
+                navItems[i].addEventListener('mouseover', function () {
+                    header.style.backgroundColor = 'white';
+                });
+
+                navItems[i].addEventListener('mouseout', function () {
+                    header.style.backgroundColor = 'transparent';
+                });
+            }
+        }
+
+        $("nav > ul > li").mouseenter(function () {
+            $(".submenu, .sub_back").stop().slideDown(400);
+            $(".sub_back_white ").stop().slideDown(300);
+        });
+        $("nav > ul > li").mouseleave(function () {
+            $(".submenu, .sub_back").stop().slideUp(400);
+            $(".sub_back_white ").stop().slideUp(500);
+        });
+
+    </script>
+</body>
+
+</html>
